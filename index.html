@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Suraj Lama Momos</title>
+</head>
+
+<body>
+    <header class="sticky-header">
+        <nav>
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoMm4WfO8bA5v5XPWaFkuELqcbKX-9tmEn-Q&s" alt="Suraj Lama momos Logo">
+                <span>Suraj Lama Momos</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="booking.html" class="reservation-btn">Book a Table</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero parallax">
+        <div class="hero-content">
+            <h1 class="animate-text">Welcome to Suraj Lama Momos</h1>
+            <p class="animate-text">Experience the authentic taste of Himalayan dumplings</p>
+            <div class="cta-buttons">
+                <a href="#menu" class="cta-button primary">View Menu</a>
+                <a href="booking.html" class="cta-button secondary">Book a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Momos Menu</h2>
+        <div class="menu-categories">
+            <button class="menu-category active" data-category="all">All</button>
+            <button class="menu-category" data-category="chicken">Chicken</button>
+            <button class="menu-category" data-category="veg">Veg</button>
+        </div>
+        <div class="menu-items">
+            <!-- CHICKEN MOMOS Section -->
+            <div class="menu-item" data-category="chicken">
+                <img src="images/chicken_momos.png" alt="Chicken Momos">
+                <div class="menu-item-content">
+                    <h3>Chicken Momos</h3>
+                    <p>Steamed dumplings filled with spiced chicken</p>
+                    <span class="price">Rs 140</span>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="chicken">
+                <img src="images/chicken_cheese_momos.png" alt="Chicken Cheese Momos">
+                <div class="menu-item-content">
+                    <h3>Chicken Cheese Momos</h3>
+                    <p>Chicken momos with delicious cheese filling</p>
+                    <span class="price">Rs 160</span>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="chicken">
+                <img src="images/chicken_fry_momos.png" alt="Chicken Fry Momos">
+                <div class="menu-item-content">
+                    <h3>Chicken Fry Momos</h3>
+                    <p>Crispy fried momos with tender chicken filling</p>
+                    <span class="price">Rs 150</span>
+                </div>
+            </div>
+            
+            <!-- COMMENTED OUT: Chicken Chilli Momos
+            <div class="menu-item" data-category="chicken">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKgCUJDOHnxqQFW9MdiLx-2NCH1-B7uX9dqA&usqp=CAU" alt="Chicken Chilli Momos">
+                <div class="menu-item-content">
+                    <h3>Chicken Chilli Momos</h3>
+                    <p>Spicy chicken momos tossed in chilli sauce</p>
+                    <span class="price">Rs 170</span>
+                </div>
+            </div>
+            -->
+            
+            <!-- COMMENTED OUT: Chicken Tandoori Momos
+            <div class="menu-item" data-category="chicken">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEixxSgVgKcUj35mMSGDKVL5U8-KZh0LkJgQ&usqp=CAU" alt="Chicken Tandoori Momos">
+                <div class="menu-item-content">
+                    <h3>Chicken Tandoori Momos</h3>
+                    <p>Momos marinated in tandoori spices and grilled</p>
+                    <span class="price">Rs 210</span>
+                </div>
+            </div>
+            -->
+            
+            <!-- COMMENTED OUT: Chicken Cheese Tandoori Momos
+            <div class="menu-item" data-category="chicken">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2gI0MIBw46vA-tEBr-5Aevnw8fZ4gQ4Sjrg&usqp=CAU" alt="Chicken Cheese Tandoori Momos">
+                <div class="menu-item-content">
+                    <h3>Chicken Cheese Tandoori Momos</h3>
+                    <p>Tandoori momos with chicken and cheese filling</p>
+                    <span class="price">Rs 240</span>
+                </div>
+            </div>
+            -->
+            
+            <!-- VEG MOMOS Section -->
+            <div class="menu-item" data-category="veg">
+                <img src="images/veg_momos.png" alt="Veg Momos">
+                <div class="menu-item-content">
+                    <h3>Veg Momos</h3>
+                    <p>Steamed dumplings with mixed vegetable filling</p>
+                    <span class="price">Rs 130</span>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="veg">
+                <img src="images/veg_cheese_momos.png" alt="Veg Cheese Momos">
+                <div class="menu-item-content">
+                    <h3>Veg Cheese Momos</h3>
+                    <p>Vegetable momos with melted cheese filling</p>
+                    <span class="price">Rs 150</span>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="veg">
+                <img src="images/veg_fry_momos.png" alt="Veg Fry Momos">
+                <div class="menu-item-content">
+                    <h3>Veg Fry Momos</h3>
+                    <p>Crispy fried momos with flavorful vegetable filling</p>
+                    <span class="price">Rs 150</span>
+                </div>
+            </div>
+            
+            <!-- COMMENTED OUT: Veg Chilli Momos
+            <div class="menu-item" data-category="veg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIjI2xnOYUkMn-Zz6CbTGNGMR-AjEXNZA7_A&usqp=CAU" alt="Veg Chilli Momos">
+                <div class="menu-item-content">
+                    <h3>Veg Chilli Momos</h3>
+                    <p>Spicy vegetable momos tossed in chilli sauce</p>
+                    <span class="price">Rs 170</span>
+                </div>
+            </div>
+            -->
+            
+            <!-- COMMENTED OUT: Veg Tandoori Momos
+            <div class="menu-item" data-category="veg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNQkMQwJoSvkEBRYOPJWXLgIoLsOBRQhGqMQ&usqp=CAU" alt="Veg Tandoori Momos">
+                <div class="menu-item-content">
+                    <h3>Veg Tandoori Momos</h3>
+                    <p>Vegetable momos marinated and baked in clay oven</p>
+                    <span class="price">Rs 170</span>
+                </div>
+            </div>
+            -->
+            
+            <!-- COMMENTED OUT: Veg Cheese Tandoori Momos
+            <div class="menu-item" data-category="veg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQxcbsIZXaXs-LxVrV5Vfp3RwZAYXwZ93njg&usqp=CAU" alt="Veg Cheese Tandoori Momos">
+                <div class="menu-item-content">
+                    <h3>Veg Cheese Tandoori Momos</h3>
+                    <p>Tandoori momos with vegetable and cheese filling</p>
+                    <span class="price">Rs 230</span>
+                </div>
+            </div>
+            -->
+            
+            <!-- COMMENTED OUT: Veg Mushroom Momos
+            <div class="menu-item" data-category="veg">
+                <img src="https://www.awesomecuisine.com/wp-content/uploads/2008/08/corn-mushroom-momos.jpg" alt="Veg Mushroom Momos">
+                <div class="menu-item-content">
+                    <h3>Veg Mushroom Momos</h3>
+                    <p>Steamed dumplings with mushroom filling</p>
+                    <span class="price">Rs 160</span>
+                </div>
+            </div>
+            -->
+            
+            <!-- COMMENTED OUT: Veg Corn Momos
+            <div class="menu-item" data-category="veg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1tTu56tYRFR_ynxHBEFWj2-_jySXYhebwA&usqp=CAU" alt="Veg Corn Momos">
+                <div class="menu-item-content">
+                    <h3>Veg Corn Momos</h3>
+                    <p>Steamed momos with sweet corn filling</p>
+                    <span class="price">Rs 170</span>
+                </div>
+            </div>
+            -->
+            
+            <!-- COMMENTED OUT: Veg Soya Momos
+            <div class="menu-item" data-category="veg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHIHPMRNyG7CAUhprLyhW0vM96XkprFxbRMA&usqp=CAU" alt="Veg Soya Momos">
+                <div class="menu-item-content">
+                    <h3>Veg Soya Momos</h3>
+                    <p>Protein-rich momos with soya filling</p>
+                    <span class="price">Rs 130</span>
+                </div>
+            </div>
+            -->
+        </div>
+        <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Founded by Suraj Lama in 2015, our restaurant brings the authentic taste of Himalayan momos to your neighborhood. Our recipes have been passed down through generations, preserving the traditional flavors while adding our own modern twist.</p>
+                <p>At Suraj Lama Momos, we believe in using only the freshest ingredients to create dumplings that not only taste amazing but also nourish your body. Our chefs are trained in the art of Momos-making, ensuring that every plate that leaves our kitchen is perfect.</p>
+                <p>Whether you're a long-time fan of momos or trying them for the first time, we promise an unforgettable dining experience that will keep you coming back for more.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://content.jdmagicbox.com/v2/comp/mumbai/t6/022pxx22.xx22.230116200326.q4t6/catalogue/suraj-lama-momos-vile-parle-east-mumbai-6txvazo6w7.jpg" alt="Our Restaurant">
+            </div>
+        </div>
+        
+        <div class="testimonials">
+            <h3>What Our Customers Say</h3>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"Best momos in town! Authentic taste and generous portions."</p>
+                    <cite>- Rahul Sharma</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"The flavors transported me straight to the Himalayas. Absolutely delicious!"</p>
+                    <cite>- Priya Kapoor</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"I've been coming here for years and the quality has never dropped. Highly recommended!"</p>
+                    <cite>- Amit Singh</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>123 Momos Street, Food City</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone Number</h3>
+                            <p>(123) 456-7890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Address</h3>
+                            <p>info@surajmomo.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <p>Mon-Fri: 11:00 AM - 10:00 PM</p>
+                            <p>Sat-Sun: 10:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-yelp"></i></a>
+                </div>
+            </div>
+            
+            <form class="contact-form">
+                <h3>Send Us a Message</h3>
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+        
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Stay updated with our latest offers and events</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        
+        <div id="map" class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.8960119554286!2d77.1957793!3d28.4922152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI5JzM1LjAiTiA3N8KwMTEnNDUuNiJF!5e0!3m2!1sen!2sin!4v1601234567890!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Opening Hours</h4>
+                <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="booking.html">Book a Table</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Momos Street, Food City</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@surajmomo.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Suraj Lama Momos. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

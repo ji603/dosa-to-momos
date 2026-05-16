@@ -21,13 +21,13 @@
 .booking-hero h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    animation: fadeInDown 0.8s forwards;
+    animation: fadeIn 0.8s forwards;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .booking-hero p {
     font-size: 1.2rem;
-    animation: fadeInUp 0.8s forwards;
+    animation: fadeIn 0.8s forwards;
     animation-delay: 0.3s;
     opacity: 0;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
@@ -117,7 +117,7 @@
 }
 
 .booking-image:hover img {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 /* Booking Form */
@@ -187,7 +187,6 @@
 
 .booking-btn:hover {
     background: #ff5252;
-    transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -196,17 +195,6 @@
     color: var(--primary-color);
 }
 
-/* Animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 /* Responsive Design */
 @media (max-width: 992px) {

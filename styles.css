@@ -113,7 +113,6 @@ nav {
 
 .reservation-btn:hover {
     background: var(--accent-color);
-    transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -152,9 +151,7 @@ nav {
 }
 
 .animate-text {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s forwards;
+    animation: fadeIn 0.8s forwards;
 }
 
 .hero h1 {
@@ -175,7 +172,7 @@ nav {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    animation: fadeInUp 0.8s forwards;
+    animation: fadeIn 0.8s forwards;
     animation-delay: 0.6s;
     opacity: 0;
 }
@@ -200,7 +197,6 @@ nav {
 }
 
 .cta-button:hover {
-    transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -262,7 +258,6 @@ nav {
 
 .menu-category:hover:not(.active) {
     background: #f0f0f0;
-    transform: translateY(-2px);
 }
 
 .menu-items {
@@ -282,7 +277,7 @@ nav {
 }
 
 .menu-item:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .menu-item img {
@@ -444,7 +439,6 @@ nav {
 .social-icon:hover {
     color: white;
     background: var(--primary-color);
-    transform: translateY(-3px);
 }
 
 .contact-form {
@@ -497,7 +491,6 @@ nav {
 
 .submit-btn:hover {
     background: #ff5252;
-    transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -553,7 +546,6 @@ nav {
 
 .newsletter-form button:hover {
     background: #ff5252;
-    transform: translateY(-2px);
 }
 
 /* Google Map */
@@ -633,14 +625,12 @@ footer {
 }
 
 /* Animations */
-@keyframes fadeInUp {
+@keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
@@ -665,7 +655,6 @@ footer {
 
 #back-to-top:hover {
     background: var(--accent-color);
-    transform: translateY(-3px);
 }
 
 /* Responsive Design */
